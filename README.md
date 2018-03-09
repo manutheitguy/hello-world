@@ -1,4 +1,2 @@
-# hello-world
-My first repository
+# Trans-Atlantic Version 2
 
-Hi, I'm @manutheitguy and I like coding
