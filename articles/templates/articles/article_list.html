@@ -1,0 +1,34 @@
+{% extends 'home/base.html' %} 
+{% load static %} 
+{% block preloader %}{% include 'home/preloader.html' %}{% endblock preloader %}
+{% block nav %}{% include 'home/navbar.html' %}{% endblock nav %}
+
+{% block content %}
+<div class="container mt-5 pt-5 pb-5">
+    <div class="articles pt-5">
+        <div class="text-dark text-center">
+            <h1>LATEST ARTICLES</h1>
+        </div>
+        
+        {% for article in articles %}
+            <div class="row article mt-5">
+                <div class="col-md-5">
+                    <img class="img-fluid" src="{{ article.thumb.url }}" alt="article thumbnail">
+                </div>
+                <div class="col-md-7  bordered">
+                <div class="pt-4 pb-3 pl-2 pr-2" >
+                    <h2><a class="text-dark" href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
+                </div>
+                <div class="pl-2 pr-2 pb-4 pt-3">
+                    <p>{{ article.snippet }}</p>
+                </div>
+                <div class="pl-2 pr-2 pb-4 pt-3">
+                    <p>Published on: {{ article.date }}</p>
+                </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
+{% block footer %}{% include 'home/footer.html' %}{% endblock footer %}
