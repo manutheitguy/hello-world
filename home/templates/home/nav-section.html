@@ -1,7 +1,7 @@
 
 {% load static %}
 
-<div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div><div id="lhc_status_container"><div id="lhc_need_help_container" style="margin-left:-80px;"><span id="lhc_need_help_triangle" style="right:15px;"></span><a id="lhc_need_help_close" title="Close" onclick="return lh_inst.lhc_need_help_hide();" href="#">×</a><div onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_image"><img src="{% static 'home/images/239b28bfd45ea8dfa1a3b63a8ca21ae7.jpg' %}" width="60" height="60"></div><div onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_main_title">Need help?</div><span onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_sub_title">Our staff is always ready to help</span></div><a id="online-icon" class="status-icon" href="#" onclick="return lh_inst.lh_openchatWindow()">We are Online - Chat Now</a></div><div class="pace  pace-inactive" style="display: none;"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99"></div>
+<div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div><div id="lhc_status_container"><div id="lhc_need_help_container" style="margin-left:-80px;"><span id="lhc_need_help_triangle" style="right:15px;"></span><a id="lhc_need_help_close" title="Close" onclick="return lh_inst.lhc_need_help_hide();" href="{% url 'index' %}">×</a><div onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_image"><img src="{% static 'home/images/239b28bfd45ea8dfa1a3b63a8ca21ae7.jpg' %}" width="60" height="60"></div><div onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_main_title">Need help?</div><span onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_sub_title">Our staff is always ready to help</span></div><a id="online-icon" class="status-icon" href="{% url 'index' %}" onclick="return lh_inst.lh_openchatWindow()">We are Online - Chat Now</a></div><div class="pace  pace-inactive" style="display: none;"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99"></div>
 
     <div class="pace-progress-inner"></div>
 </div>
@@ -32,7 +32,7 @@
 			<div class="modal-body">
 				<div class="col-sm-12 col-xs-12 noPad onlineCostLeftOuterOut uncompeletBox">
 					<div class="pupUptext">
-						<h5>We are upgrading our Online Cost Calculator with more features and it shall be back soon. In the meantime, you can <a href="#">Get a Quote</a> here.</h5>
+						<h5>We are upgrading our Online Cost Calculator with more features and it shall be back soon. In the meantime, you can <a href="{% url 'index' %}">Get a Quote</a> here.</h5>
 					</div>
 				</div>
             </div>
@@ -179,7 +179,7 @@
   <div class="defineFloat midBar">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-6 logo"> <a href="#"><img src="{% static 'home/images/logo1.png' %}" class="img-responsive" alt="" title="SEO Experts India"></a> </div>
+        <div class="col-md-3 col-sm-3 col-xs-6 logo"> <a href="{% url 'index' %}"><img src="{% static 'home/images/logo1.png' %}" class="img-responsive" alt="" title="SEO Experts India"></a> </div>
         <div class="col-sm-9 col-md-9 col-xs-12 menu_outer">
           <nav class="navbar navbar-default"> 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -203,10 +203,10 @@
                     <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
 					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
 					</li>
-					<li class=" subMenuTT"><a href="#">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
+					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
  relevant &amp; high authority backlinks for your off-page campaigns. 
 Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="#" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
+                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
 					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
 					</li>                    
                     <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat
@@ -228,10 +228,10 @@ Advertising services.</span>
                     <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
 					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
 					</li>
-					<li class=" subMenuTT"><a href="#">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
+					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
  relevant &amp; high authority backlinks for your off-page campaigns. 
 Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="#" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
+                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
 					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
 					</li>                    
                     <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat
@@ -254,10 +254,10 @@ Advertising services.</span>
                     <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
 					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
 					</li>
-					<li class=" subMenuTT"><a href="#">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
+					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
  relevant &amp; high authority backlinks for your off-page campaigns. 
 Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="#" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
+                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
 					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
 					</li>                    
                     <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat
@@ -279,10 +279,10 @@ Advertising services.</span>
                     <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
 					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
 					</li>
-					<li class=" subMenuTT"><a href="#">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
+					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
  relevant &amp; high authority backlinks for your off-page campaigns. 
 Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="#" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
+                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
 					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
 					</li>                    
                     <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat

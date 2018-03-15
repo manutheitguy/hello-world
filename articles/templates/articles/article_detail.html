@@ -1,7 +1,6 @@
-
 {% extends 'home/base.html' %}
 {% load static %}
-<body class="linkBuilding">
+<body class="home  pace-done">
 {% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %}
 
 {% block content %} 
@@ -12,7 +11,7 @@
                 <div class="col-md-6">
                     <img class="img-fluid" src="{{ article.thumb.url }}" alt="">
                 </div>
-                <div class="col-md-6 pt-4 bordered">
+                <div class="col-md-6 pt-4 article-txt">
                     <div class="pb-2">
                         <h2>{{ article.title }}</h2>
                     </div>
@@ -28,7 +27,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 mt-5 bordered">
+                <div class="col-md-12 mt-5 article-txt">
                     
                     <div class="p-5">
                         <p>{{ article.body }}</p>
